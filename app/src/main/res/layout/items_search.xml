@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/items_round_corner"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/documentimage"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            app:shapeAppearanceOverlay="@style/RoundedImageView"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/documetsimage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></com.google.android.material.imageview.ShapeableImageView>
+
+        <TextView
+            android:id="@+id/TAGMAIN"
+            android:layout_width="141dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="16dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/shared"
+            app:layout_constraintHorizontal_bias="0.267"
+            app:layout_constraintStart_toEndOf="@+id/documentimage"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+        <TextView
+            android:id="@+id/DATEd"
+            android:layout_width="59dp"
+            android:layout_height="19dp"
+
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/normal_serch"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/TAGMAIN"
+            app:layout_constraintTop_toBottomOf="@+id/TAGMAIN"></TextView>
+
+        <TextView
+            android:id="@+id/Timed"
+            android:layout_width="94dp"
+            android:layout_height="18dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="vfashgahsgahsgasg"
+            android:textColor="@color/normal_serch"
+            app:layout_constraintBottom_toBottomOf="@+id/DATEd"
+            app:layout_constraintStart_toEndOf="@+id/DATEd"
+            app:layout_constraintTop_toTopOf="@+id/DATEd"></TextView>
+
+        <ImageView
+            android:id="@+id/shared"
+            android:layout_width="20.01dp"
+            android:layout_height="20.03dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/share_image"
+            app:layout_constraintBottom_toBottomOf="@+id/optiond"
+            app:layout_constraintEnd_toStartOf="@+id/optiond"
+            app:layout_constraintTop_toTopOf="@+id/optiond"
+            app:layout_constraintVertical_bias="0.409"></ImageView>
+
+        <ImageView
+            android:id="@+id/optiond"
+            android:layout_width="20.01dp"
+            android:layout_height="20.03dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/menu_imag"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.409"></ImageView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
